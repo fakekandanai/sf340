@@ -1,0 +1,155 @@
+/* mitr-300 - latin_thai */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mitr';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/mitr-v11-latin_thai-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mitr-regular - latin_thai */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mitr';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/mitr-v11-latin_thai-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Global */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    color: #333333;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111111;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+
+
+body.loading {
+    display: none;
+}
+
+.card {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h1.text-center.mb-4 {
+    margin-top: -1.6rem;
+}
+
+body {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1.text-center.mb-4 {
+    margin-top: -1.6rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(129, 207, 129);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.driver-text,
+.mileage-text,
+.date-text {
+    margin-bottom: 2px;
+}
+
+#deliverTruckBtn {
+    margin-top: 10px;
+}
+
+#calculateBtn {
+    background-color: green;
+}
+
+#cardDetailsModal {
+    position: fixed;
+    top: 12%;
+    left: 0%;
+
+}
+
+
+
+#calculationResultModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+
+
+    padding: 20px;
+}
+
+#confirmationModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+
+
+    padding: 20px;
+}
+
+.deliver-truck-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6e94ad;
+    /* You can change the color as needed */
+    color: #ffffff;
+    /* Text color */
+    border: 2px solid #000000;
+    outline: none;
+    margin-top: 3px;
+    /* Adjust the vertical position */
+    margin-right: 3px;
+    /* Adjust the horizontal position */
+    background-image: url('truck.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.deliver-truck-btn i {
+    margin: 0;
+    padding: 0;
+}
+
